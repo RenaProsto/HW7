@@ -55,12 +55,12 @@ public class Main {
         System.out.println("Задача 4");
         int money = 15_000;
         int month = 0;
-        int total = 0;
-        int percent = 7 * money / 100;
-        while (total < 2_000_000) {
-            total = total + money + percent;
+        int percent = 0;
+        while (money < 2_000_000) {
+            percent = 7 * money / 100;
+            money = money + percent;
             month = month + 1;
-            System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
+            System.out.println("Месяц " + month + " сумма накоплений равна " + money + " рублей");
         }
     }
     public static void task5() {
@@ -68,13 +68,13 @@ public class Main {
 
         int money = 15_000;
         int month = 0;
-        int total = 0;
-        int percent = 7 * money / 100;
-        while (total < 2_000_000) {
-            total = total + money + percent;
+        int percent =0;
+        while (money < 2_000_000) {
+            percent = 7 * money / 100;
+            money = money + percent;
             month = month + 1;
             if (month %6 == 0)
-            System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
+            System.out.println("Месяц " + month + " сумма накоплений равна " + money + " рублей");
         }
     }
 
@@ -82,13 +82,13 @@ public class Main {
         System.out.println("Задача 6");
         int money = 15_000;
         int month = 0;
-        int total = 0;
-        int percent = 7 * money / 100;
+        int percent = 0;
         while (month < 108){
-            total = total + money + percent;
+            percent = 7 * money / 100;
+            money = money + percent;
             month = month + 1;
             if (month %6 == 0)
-                System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
+                System.out.println("Месяц " + month + " сумма накоплений равна " + money + " рублей");
         }
     }
     public static void task7() {
